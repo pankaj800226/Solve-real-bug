@@ -38,11 +38,11 @@ const Banner = () => {
                         </p>
 
                         <div className="flex justify-center gap-5">
-                            <button className="px-8 py-3.5 rounded-xl font-semibold bg-gradient-to-r from-indigo-500 to-indigo-400 shadow-[0_10px_30px_rgba(99,102,241,0.35)] hover:-translate-y-0.5 hover:shadow-[0_14px_40px_rgba(99,102,241,0.5)] transition">
+                            <button className="px-8 py-3.5 rounded-xl font-semibold bg-gradient-to-r from-indigo-500 to-indigo-400 shadow-[0_10px_30px_rgba(99,102,241,0.35)] hover:-translate-y-0.5 hover:shadow-[0_14px_40px_rgba(99,102,241,0.5)] transition cursor-pointer">
                                 Get Start
                             </button>
 
-                            <button className="px-8 py-3.5 rounded-xl font-semibold border border-slate-600 text-slate-200 hover:border-indigo-400 hover:text-white hover:-translate-y-0.5 transition">
+                            <button className="px-8 py-3.5 rounded-xl font-semibold border border-slate-600 text-slate-200 hover:border-indigo-400 hover:text-white hover:-translate-y-0.5 transition cursor-pointer">
                                 Explore Bugs
                             </button>
                         </div>
