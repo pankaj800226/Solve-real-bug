@@ -1,0 +1,200 @@
+/* ===== Banner Layout ===== */
+.banner {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at top, rgba(99,102,241,0.15), transparent 60%),
+    linear-gradient(180deg, #020617, #020617);
+}
+
+/* Grid Overlay */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Container */
+.banner-container {
+  position: relative;
+  z-index: 10;
+  max-width: 1100px;
+  width: 100%;
+  padding: 8rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+}
+
+/* Content */
+.banner-content {
+  max-width: 720px;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  margin-bottom: 1.75rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #a5b4fc;
+  border: 1px solid rgba(99,102,241,0.3);
+  background: rgba(99,102,241,0.15);
+}
+
+/* Title */
+.title {
+  font-size: 3.8rem;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #818cf8, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+.description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #cbd5f5;
+  margin-bottom: 2.5rem;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.btn-primary {
+  padding: 0.9rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  box-shadow: 0 10px 30px rgba(99,102,241,0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(99,102,241,0.5);
+}
+
+.btn-secondary {
+  padding: 0.9rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #e5e7eb;
+  border: 1px solid #475569;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #818cf8;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Code Section */
+.code-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.code-block {
+  width: 100%;
+  max-width: 720px;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  background: #020617;
+  border: 1px solid #1e293b;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  overflow-x: auto;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.55);
+  font-family: monospace;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .banner-container {
+    padding-top: 6rem;
+  }
+}
+
+
+/* Prism Custom Colors */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #e5e7eb;
+  background: none;
+  text-shadow: none;
+}
+
+/* Tokens */
+.token.comment {
+  color: #64748b;
+  font-style: italic;
+}
+
+.token.keyword {
+  color: #818cf8;
+}
+
+.token.string {
+  color: #22d3ee;
+}
+
+.token.function {
+  color: #facc15;
+}
+
+.token.number {
+  color: #f472b6;
+}
+
+.token.operator {
+  color: #e879f9;
+}
+
+.token.boolean {
+  color: #fb7185;
+}
+
+.token.class-name {
+  color: #34d399;
+}

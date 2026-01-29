@@ -4,6 +4,11 @@ import Header from './components/Header'
 
 const Home = React.lazy(() => import('./pages/Home'))
 
+// style configration
+import './styles/app.scss'
+import './styles/banner.scss'
+
+
 const App: React.FC = () => {
   return (
     <Router>
