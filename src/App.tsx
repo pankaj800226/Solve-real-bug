@@ -7,6 +7,9 @@ const Home = React.lazy(() => import('./pages/Home'))
 // style configration
 import './styles/app.scss'
 import './styles/banner.scss'
+import './styles/header.scss'
+
+
 
 
 const App: React.FC = () => {
